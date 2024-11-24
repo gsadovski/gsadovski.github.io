@@ -32,8 +32,8 @@ repo_theme_light: solarized-light # https://github.com/anuraghazra/github-readme
 repo_theme_dark: solarized-dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: angolia # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: dracula # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
 # RSS Feed

@@ -5,24 +5,42 @@
 
 @use "sass:color";
 
+// Solarized colorscheme
+$base03: #002b36 !default;
+$base02: #073642 !default;
+$base01: #586e75 !default;
+$base00: #657b83 !default;
+$base0: #839496 !default;
+$base1: #93a1a1 !default;
+$base2: #eee8d5 !default;
+$base3: #fdf6e3 !default;
+$yellow: #b58900 !default;
+$orange: #cb4b16 !default;
+$red: #dc322f !default;
+$magenta: #d33682 !default;
+$violet: #6c71c4 !default;
+$blue: #268bd2 !default;
+$cyan: #2aa198 !default;
+$green: #859900 !default;
+
 // Colors
-$red-color: #ff3636 !default;
-$red-color-dark: #b71c1c !default;
-$orange-color: #f29105 !default;
-$blue-color: #0076df !default;
-$blue-color-dark: #00369f !default;
-$cyan-color: #2698ba !default;
+$red-color: $red;
+$red-color-dark: $red;
+$orange-color: $orange;
+$blue-color: $blue;
+$blue-color-dark: $blue;
+$cyan-color: $cyan;
 $light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
-$green-color: #00ab37 !default;
-$green-color-lime: #b7d12a !default;
-$green-color-dark: #009f06 !default;
-$green-color-light: #ddffdd !default;
-$green-color-bright: #11d68b !default;
-$purple-color: #b509ac !default;
+$green-color: $green;
+$green-color-lime: $green;
+$green-color-dark: $green;
+$green-color-light: $green;
+$green-color-bright: $green;
+$purple-color: $violet;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
-$pink-color: #f92080 !default;
-$pink-color-light: #ffdddd !default;
-$yellow-color: #efcc00 !default;
+$pink-color: $magenta;
+$light-pink-color: color.adjust($pink-color, $lightness: 25%);
+$yellow-color: $yellow;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
