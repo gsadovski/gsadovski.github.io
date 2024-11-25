@@ -16,8 +16,8 @@ profile:
 # <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
 I am a theoretical physicist with a passion for high-energy physics and gravity in extreme regimes. My research delves into the most fundamental aspects of the universe, particularly the quantum nature of the gravitational field. I hold a PhD, specializing in the interplay between topological and gravitational field theories.
