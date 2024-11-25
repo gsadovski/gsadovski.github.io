@@ -29,10 +29,18 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a theoretical physicist with a passion for high-energy physics and gravity in extreme regimes. My research delves into the most fundamental aspects of the universe, particularly the quantum nature of the gravitational field. I hold a PhD, specializing in the interplay between topological and gravitational field theories.
+I am a theoretical physicist with a passion for high-energy physics and gravity in extreme regimes. My research delves into the most fundamental aspects of the universe, with particular interest in [topological quantum field theories][wiki/tqft], [gravity][wiki/gravity], and global aspects of the [spacetime manifold][wiki/spacetime_topology].
 
-Aside from my academic pursuits, I'm an avid traveler, having lived in 5 different countries and visited 20 more. Each of these places profoundly shaped my perspective, enriching my understanding of different cultures and the world around me. But mostly, I've learned that life is always better next to the ocean.
+Studying physics has allowed me the opportunity to live in five different countries and visit around 20 more. Each of these experiences has greatly influenced my perspective and understanding of the world. It is amazing to see the countless ways in which people live their lives. Personally, I have discovered that I am happiest when I am near the ocean, and in subtropical temperatures.
 
-I am a passionate SCUBA and freediver with over 300 logged dives. I find that nothing compares to the joy of being underwater with a limited gas supply. Jokes aside, it's a unique activity that challenges you mentally and physically. I also have an appreciation for simple pleasures, such as a good cup of coffee in the morning or a cold beer on a warm summer day.
+I am a passionate freediver and SCUBA diver, with over 300 logged dives. In addition to the obvious beauty and wonder of the underwater world, diving is a unique activity that combines physics with [the human element][wiki/human_phys_uw]. It also makes it complex, consequential and potentially dangerous. Personally, I find that it balances well my highly theoretical work life.
 
-Online, I am a GNU/Linux enthusiast. My preferred flavor is Arch Linux for its flexibility and control. I orbit around TUI applications due to the efficiency and simplicity they provide. In practice, though, GUI is an unavailable fact of life.
+Online, I am a GNU/Linux enthusiast. My preferred flavor is [Arch Linux][web/arch] for its flexibility and control. I orbit around TUI applications due to their efficiency and performance.
+
+[wiki/tqft]: https://en.wikipedia.org/wiki/Topological_quantum_field_theory
+[wiki/gravity]: https://en.wikipedia.org/wiki/Gravity
+[wiki/spacetime_topology]: https://en.wikipedia.org/wiki/Spacetime_topology
+[wiki/human_phys_uw]: https://en.wikipedia.org/wiki/Human_physiology_of_underwater_diving
+[web/arch]: https://archlinux.org/
+
+
