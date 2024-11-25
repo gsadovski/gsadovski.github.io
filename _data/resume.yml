@@ -1,0 +1,50 @@
+basics:
+  name: Guilherme Sadovski
+  label: Researcher
+  url: gsadovski.github.io
+  summary: | 
+    Brazilian-born theoretical 
+    physicist specialized in 
+    the intersection between 
+    quantum fields and gravity.
+work:
+  - name: Okinawa Institute of Science and Technology, OIST
+    url: https://www.oist.jp/
+    location: Japan
+    position: Postdoctoral Scholar
+    startDate: 2019
+    endDate: 2022
+  - name: Henan University, HENU
+    url: https://www.henu.edu.cn/
+    location: China
+    position: Postdoctoral Scholar
+    startDate: 2022
+    endDate: 2024
+education:
+  - institution: Universidade Federal Fluminense, UFF
+    url: https://portal.if.uff.br/
+    location: Brazil
+    studyType: PhD
+    startDate: 2015
+    endDate: 2019
+  - institution: Universidade Federal Fluminense, UFF
+    url: https://portal.if.uff.br/
+    location: Brazil
+    studyType: MSc
+    startDate: 2013
+    endDate: 2015
+  - institution: Universidade Estadual de Feira de Santana, UEFS
+    url: http://www.fisica.uefs.br/
+    location: Brazil
+    studyType: BSc
+    startDate: 2008
+    endDate: 2013
+languages:
+  - language: Portuguese
+    fluency: Native speaker
+  - language: English
+    fluency: Fluent
+  - language: Spanish
+    fluency: Advanced
+  - language: Japanese
+    fluency: Basic
