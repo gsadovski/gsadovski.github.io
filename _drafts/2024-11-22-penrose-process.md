@@ -112,4 +112,10 @@ and over the event horizon ($r=r_{H}^{+}$), $\omega = \omega_{H}$, where $\omega
 
 ## Negative energies and momenta
 
+We have just observed how an extreme Lense-Thirring effect occurs inside the ergosurface. When crossing it, the azimuthal component of your 4-velocity $\dot{\gamma}^{\phi}$ is required to change by the ratio $\Omega$ in order to offset the sign change that occurred in $\dot{\gamma}^{t}$, ensuring that the inequality $g(\dot{\gamma},\dot{\gamma}) < 0$ remains invariant.
+
+A similar situation arises with the 4-momentum $p = m \dot{\gamma}$ of a particle with mass $m$ following the curve $\gamma\left(\tau\right)$. Upon entering the ergoregion, the momentum component $p_{t} \equiv g\left(\partial_{t},p\right)$ changes sign, and $p_{\phi}$ must adjust accordingly to maintain the inequality $g \left(p,p\right) < 0$ unchanged. The particularly interesting point here is that $p_{t} = - E$ and $p_{\phi} = L$, where $E$ is the energy and $L$ the azimuthal angular momentum of this particle. So, asymptotic observers can witness a particle's energy change sign if it crosses an ergosurface.
+
+The negative energy condition, $E < 0$, can be expressed as $\Omega < - g_{tt}/g_{t \phi}$. Outside the ergoregion ($r > r_{E}^{+}$), this condition cannot be satisfied by either time-like or null curves as it would imply supraluminal speeds. The same is true at the ergosurface ($r = r_{E}^{+}$), where $g_{tt} = 0$. However, within the ergoregion ($r_{E}^{+} < r < r_{H}^{+}$), we find that $g_{tt} > 0$, and the negative energy condition clearly intersects with the time-like/null condition ($\Omega^{-} \leq \Omega \leq \Omega^{+}$).
+
 ## The Penrose process
