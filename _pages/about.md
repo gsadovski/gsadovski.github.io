@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
 #subtitle: <a href='#'>Affiliation</a>. Address . Contacts. Motto. Etc.
 subtitle: <i>"Science is the belief in the ignorance of experts."</i> 
