@@ -4,4 +4,10 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - gsadovski/arXiv-2207.05721
+  - gsadovski/arXiv-2405.02884
+  - gsadovski/research-manuscript
   - gsadovski/gsadovski.github.io
+  - gsadovski/al-folio-solarized
+  - gsadovski/library
+
