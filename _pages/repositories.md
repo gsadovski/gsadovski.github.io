@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: git
-description:
+description: Git repositories.
 nav: true
 nav_order: 4
 ---
