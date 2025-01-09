@@ -6,9 +6,9 @@ author: Guilherme Sadovski
 date: 2024-12-13 11:17 -0300 UTC
 tags: gr-qc
 categories: physics
-pseudocode: true
+pseudocode: false
 giscus_comments: false
-related_posts: false
+related_posts: true
 toc:
   sidebar: left
 tikzjax: true
