@@ -101,6 +101,31 @@ The Arnowitt-Deser-Misner (ADM) formalism makes use of a foliation to split Eins
 
 ## Constraint equations
 
+Not every Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ is compatible with a foliation of $\left(X, g_{\mu \nu}\right)$. The constraint equations for the Cauchy data exist to ensure this compatibility
+
+Let $\pi_{ij} \equiv 4 \pi \sqrt{h} \left( K_{ij} - h_{ij} K \right) \; ; \; K \equiv h^{ij}K_{ij} $ be the conjugated momenta of $h_{ij}$. Einstein's equation $R_{00} = 0$, when projected onto $\Sigma_{\lambda}$, results in the famous Hamiltonian constraint,
+
+$$ H = 0 \;, $$
+
+where $H \equiv - \sqrt{h} \left[ R(h) + h^{-1} \left( \pi^{2} - \pi_{ij}\pi^{ij} \right) \right] \; ; \; \pi \equiv h^{ij}\pi_{ij}$, and $R(h)$ is the curvature scalar of $h_{ij}$. On the other hand, when $R_{0i} = 0$ is projected onto $\Sigma_{\lambda}$, the result is
+
+$$ P^i = 0 \;, $$
+
+where $P^i \equiv -2 \nabla_j \pi^{ij}$. These are the 4 constraint equations the Cauchy data has to satisfy in order to be compatible with a foliation of $\left(X, g_{\mu \nu}\right)$.
+
+Here we cannot avoid mentioning that, in quantum gravity, these are the constraint equations that lead to the (also) famous Wheeler-deWitt equations,
+
+$$
+\begin{aligned}
+\hat{H} \lvert \Psi \rangle &= 0 \;, \\ 
+\hat{P}^i \lvert \Psi \rangle &= 0 \;, 
+\end{aligned}
+$$ 
+
+for the quantum state $\lvert \Psi \rangle$ of the entire Universe. As well as to the problem of time, Ashtekar variables (complex self-dual formulation of GR), and the loop representation of C. Rovelli and L. Smolin, giving birth to Loop Quantum Gravity.
+
+## Dynamical equations
+
 ## Conclusions
 
 This is your conclusions.
