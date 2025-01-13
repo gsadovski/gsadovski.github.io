@@ -31,9 +31,9 @@ latest_posts:
 
 I am a theoretical physicist with a passion for high-energy physics and gravity in extreme regimes. My research delves into the most fundamental aspects of the universe, with particular interest in [topological quantum field theories][wiki/tqft], [gravity][wiki/gravity], and global aspects of the [spacetime manifold][wiki/spacetime_topology].
 
-Studying physics has allowed me the opportunity to live in five different countries and visit around 20 more. Each of these experiences has greatly influenced my perspective and understanding of the world. It is amazing to see the countless ways in which people live their lives. Personally, I have discovered that I am happiest when I am near the ocean, and in subtropical temperatures.
+Studying physics has allowed me the opportunity to live in five different countries, and visit ~20 more all around the world. Each of these experiences has greatly influenced my perspective and understanding of the human existence. It is amazing to see how vastly different people live their lives. Personally, I have discovered that I am the happiest when I'm living nearby the ocean, preferably in subtropical temperatures :)
 
-I am a passionate freediver and SCUBA diver, with over 300 logged dives. In addition to the obvious beauty and wonder of the underwater world, diving is a unique activity that combines physics with [the human element][wiki/human_phys_uw]. It also makes it complex, consequential and potentially dangerous. Personally, I find that it balances well my highly theoretical work life.
+I am a passionate freediver and SCUBA diver, with over 300 logged dives. In addition to the obvious beauty and wonder of the underwater world, diving is a unique activity that combines physics with [the human element][wiki/human_phys_uw]. It also makes it complex, consequential and potentially dangerous. I find that it balances well my highly theoretical work.
 
 Online, I am a GNU/Linux enthusiast. My preferred flavor is [Arch Linux][web/arch] for its flexibility and control. I orbit around TUI applications due to their efficiency and performance.
 
