@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How predictive is General Relativity? 
-description: An analysis of the Cauchy problem in GR.
+description: An account of the Cauchy problem in GR.
 author: Guilherme Sadovski
 date: 2026-01-10 08:59 -0300 UTC
 tags: gr-qc, phys-math
@@ -12,7 +12,7 @@ related_posts: true
 toc:
   sidebar: left
 tikzjax: true
-thumbnail: assets/img/kerr.webp
+thumbnail: assets/img/cauchy.webp
 ---
 
 ## Introduction
