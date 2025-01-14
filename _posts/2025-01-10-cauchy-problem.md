@@ -97,7 +97,7 @@ Let's consider $\left(X, g_{\mu \nu}\right)$ a Lorentzian 4-manifold. If foliata
 
 Foliability implies something which is very mundane for us: that space and time are separated, orthogonal, entities. We measure space with a ruler, time with a clock. Ever a situation arose in which we needed both a rule and a clock to measure space, or a ruler and a clock to measure time. And, to be frank, this is always true as long as we are measuring a small enough neighborhood of spacetime (most of us never even left Earth anyway). However, in theory, this cannot be guaranteed over the entire spacetime (globally) for whatever solution of GR. This is a feature (not a bug) of its full invariance under diffeomorphism maps. Hence, if we want to establish a global notion of time evolution, initial data, *etc*. (necessary for a well-defined Cauchy problem), we need to assume foliability and make use of a foliation.
 
-The Arnowitt-Deser-Misner (ADM) formalism makes use of a foliation to split Einstein's equations apart. Mind that there are many (*a.k.a.* infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because the result of projecting Einstein's equations onto the leaves, separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as their Cauchy data.
+The Arnowitt-Deser-Misner (ADM) formalism makes use of a foliation to split Einstein's equations apart. Mind that there are many (*a.k.a.* infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because the result of projecting Einstein's equations onto the leaves, separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as, presumably, their Cauchy data.
 
 ## Constraint equations
 
@@ -125,6 +125,20 @@ $$
 for the quantum state $\lvert \Psi \rangle$ of the entire Universe. As well as to the problem of time, Ashtekar variables (complex self-dual formulation of GR), and the loop representation of C. Rovelli and L. Smolin, giving birth to Loop Quantum Gravity.
 
 ## Dynamical equations
+
+The flow of time happens in the direction of the vector field $\partial_{\lambda} = \alpha \hat{n} + \vec{\beta}$, where $\alpha$ is the so-called lapse function, $\hat{n}$ is the unit vector normal to $\Sigma_{\lambda}$, and $\vec{\beta}$ the displacement vector implicitly given by the orthogonality condition $\hat{n} \cdot \vec{\beta} = 0$.
+
+The dynamical equations satisfied by $h_{ij}$ can be obtained from the very definition of extrinsic curvature, and give how the local geometry of $\Sigma_{\lambda}$ and $\Sigma_{\lambda+ \delta\lambda}$ are connected to each other, where $\delta\lambda$ is an infinitesimally small passage of time. Explicitly, $K_{ij} \equiv - L_{\alpha \hat{n}} h_{ij} / 2$, where $L_{\alpha \hat{n}}$ is the Lie derivative along $\alpha\hat{n}$. Solving for $L_{\partial_{\lambda}} h_{ij}$, one arrives at
+
+$$ \mathcal{L}_{\partial_{\lambda}} h_{ij} = - 2 K_{ij} + \mathcal{L}_{\vec{\beta}} h_{ij} \;. $$
+
+On the other hand, the dynamical equations for $K_{ij}$ are given by the projection of Einstein's equations $R_{ij} = 0$ onto the leaves $\Sigma_{\lambda}$. Explicitly,
+
+$$ \partial_{\lambda} K_{ij} = \alpha \left[ R_{ij} \left(h\right) + K_{ij} K - 2 K_{ik} K_j^k \right] \;,  $$ 
+
+which, again, gives how the local curvature in $\Sigma_{\lambda}$ and $\Sigma_{\lambda + \delta\lambda}$ are connected to each other.
+
+If GR is indeed fully deterministic in foliatable spacetimes, these dynamical equations can be used to evolve the Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ on a leaf (a value of $\lambda$) to any other leaf (any other value of $\lambda$). This is equivalent to know the entire plot of a movie from just a screenshot (unfortunately, not a rare occurrence these days). Here, however, the movie is the entire history of the Universe. This is what theoretical physicists and mathematicians mean when they speak of "a well-defined Cauchy problem".
 
 ## Conclusions
 
