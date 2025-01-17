@@ -25,7 +25,7 @@ Mathematically, determinism is reflected by a system of differential equations w
  
 A detailed study of the predictive power of GR needs to address the proof of existence and uniqueness of its solutions. Of course, a natural step is to attempt to formulation of a well-defined Cauchy problem for Einstein's equations. However, this has proven to be difficult. And, even if we're eventually successful, our results would still be restricted to the subspace of foliatable solutions only.
 
-An important tool in this endevor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave equations). The Cauchy-Kowalesvski (CK) theorem then applies, and we can at least guarantee the *local* existence and uniqueness.
+An important tool in this endevor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave equations). The Cauchy-Kowalesvski theorem then applies, and we can at least guarantee the *local* existence and uniqueness.
 
 On the other hand, the *global* proof of existence and uniqueness of solutions is still an open problem. The theorems of existence of spacetime singularities, and the possible existence of Cauchy horizons, are especially crippling in this regard. The weak and strong cosmic censorship conjecture were formulated in an attempt to mitigate this situation by restoring GR's determinism for asymptotic observers. Nevertheless, very recently, evidence against these censorship conjectures started piling up.
 
@@ -37,7 +37,7 @@ GR has dynamics invariant under the group of diffeomorphism maps among Lorentzia
 
 To gauge fix the invariance under diffeomorphisms gives us a way to simplify Einstein's equations without really sacrificing its physical content. A convenient choice is the so-called harmonic gauge fix condition, defined by the constraint equations, $\Box x^{\mu} = 0$, where $\Box \equiv g^{\mu \nu} \nabla_{\mu} \nabla_{\nu}$ is the d'Alembertian operator in a curved spacetime. Applying this condition to Einstein's equations in vacuum, $R_{\mu \nu} = 0$, shapes them into the form $\Box g_{\mu \nu} = N_{\mu \nu}$, where $N_{\mu \nu}$ are non-linear terms up to the 1st derivative of $g_{\mu \nu}$.
 
-The wave-like equations $\Box g_{\mu \nu} = N_{\mu \nu}$ are mathematically classified as a set of quasi-linear hyperbolic PDEs. Luckily, this branch of Analysis is particularly more well-developed than the branch of fully non-linear generic PDEs. For instance, the local existence and uniqueness of their solutions are proven in a result known as the Cauchy-Kowalevski theorem.
+The wave-like equations $\Box g_{\mu \nu} = N_{\mu \nu}$ are mathematically classified as a set of quasi-linear hyperbolic PDEs. Luckily, this branch of Analysis is particularly more well-developed than the branch of fully non-linear generic PDEs. For instance, the local existence and uniqueness of their solutions are proven in a result known as the Cauchy-Kowalevski (CK) theorem.
 
 In summary, the harmonic gauge is important because it allows us to prove that, at the very least, GR is a deterministic theory in a small enough neighborhood of its solution space.
 
@@ -140,6 +140,19 @@ which, again, gives how the local curvature in $\Sigma_{\lambda}$ and $\Sigma_{\
 
 If GR is indeed fully deterministic in foliatable spacetimes, these dynamical equations can be used to evolve the Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ on a leaf (a value of $\lambda$) to any other leaf (any other value of $\lambda$). This is equivalent to know the entire plot of a movie from just a screenshot (unfortunately, not a rare occurrence these days). Here, however, the movie is the entire history of the Universe. This is what theoretical physicists and mathematicians mean when they speak of "a well-defined Cauchy problem".
 
+## Global existence and uniqueness of solutions
+
+The existence of solutions in short time intervals are guaranteed by the hyperbolic form Einstein's equations assume in the harmonic gauge. In 1969, mathematical-physicists Y. Choquet-Buhat and R. Geroch were able to extend this result to arbitrary time intervals, but only inside the subspace of asymptotic flat solutions. To this day, the global proof of existence of arbitrary solutions is an open problem in the mathematical-physics of GR.
+
+Going back to the CK theorem, the proof of local uniqueness are in one-to-one correspondence with the existence of a Cauchy surface between $\Sigma_{\lambda}$ and $\Sigma_{\lambda+\delta \lambda}$[^1]. In fact, one can always find a convenient foliation in which every leaf ${\Sigma'}_{\lambda'} \; ; \; \lambda' \in \left[\lambda, \lambda + \delta\lambda\right]$ is a Cauchy surface. It should be more or less clear that, a global version of the CK uniqueness theorem means that, if a solution is unique within the infinitesimal time interval $\left[\lambda, \lambda + \delta \lambda\right]$, then it will remain unique for arbitrarily large time intervals. And, that would require every solution of GR to have a global foliation in terms of Cauchy surfaces. These are the so-called globally hyperbolic solutions.
+
+The possibility that the solution space of Einstein's equations contains only globally hyperbolic solutions was, ironically, short-lived. By 1970, the Penrose-Hawking singularity theorems were fully formulated. Additionally, Penrose also clarified the concept of Cauchy horizons: spacetime boundaries present inside rotating black holes beyond which the Cauchy problem becomes ill-defined. At the time, these results clearly indicated an embarrassing fact: GR might not be a fully predictive theory.
+
+## Cosmic censorship hypotheses
+
+The situation bothered even Penrose himself, which forced him to conjecture
+
+[^1]: No need to mind what a Cauchy surface is. Just that, if it exists within a time interval, then the Cauchy problem for Einstein's equations is well-defined within this interval.
 ## Conclusions
 
 This is your conclusions.
