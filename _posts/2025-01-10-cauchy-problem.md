@@ -17,97 +17,80 @@ thumbnail: assets/img/cauchy.webp
 
 ## Introduction
 
-Einstein's equations in vacuum, $R_{\mu \nu} = 0$, consists of ten coupled non-linear partial differential equations (PDEs) for the Lorentzian 4-metric $g_{\mu \nu}(x)$. Given the complexity of these dynamical equations, it is not immediately clear that General Relativity (GR) is a deterministic theory. 
+Einstein's equations in vacuum, given by $R_{\mu \nu} = 0$, consist of ten coupled non-linear generic partial differential equations (PDEs) for the Lorentzian 4-metric tensor field, $g_{\mu \nu}(x)$. Given the complexity of these dynamical equations, it is not immediately clear that General Relativity (GR) is a deterministic theory. 
 
-Determinism is a important feature of physical theories. In a deterministic description, the whole past and future of a system can be determined, with infinite precision, from a very minimal set of initial data. This makes deterministic theories extremely predictive and appealing to the scientific framework.
+Determinism is an important feature of physical theories. It implies that the whole past and future (the history) of a system can be evaluated, with infinite precision, from a minimal set of data. This makes deterministic theories extremely predictive, and thus appealing to the scientific framework.
 
-Mathematically, determinism is reflected by a system of differential equations whose solutions exist, and can be uniquely determined by a set of initial data. Examples of theories with this well-defined Cauchy problem are: Newton's 2nd law of classical mechanism, described by a system of ordinary differential equations (ODEs); Maxwell's equations for the electromagnetic field, described by a set of linear PDEs; even Schrödinger's equation for the unitary evolution of a quantum state in the absence of measurements (collapses of the wave functions), given by a single linear ODE; and the list goes on.
- 
-A detailed study of the predictive power of GR needs to address the proof of existence and uniqueness of its solutions. Of course, a natural step is to attempt to formulation of a well-defined Cauchy problem for Einstein's equations. However, this has proven to be difficult. And, even if we're eventually successful, our results would still be restricted to the subspace of foliatable solutions only.
+Mathematically, determinism is modelled by a system of equations whose solutions exist, and can be uniquely determined. Usually the system is differential with respect to some "time" parameter, and the minimal set of data is the Cauchy (initial) data. Systems like these are said to have a *well-posed Cauchy problem*.
 
-An important tool in this endevor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave equations). The Cauchy-Kowalesvski theorem then applies, and we can at least guarantee the *local* existence and uniqueness.
+Examples in Physics are plenty: Newton's 2nd Law, Newton's Law of Gravitation, Maxwell's equations, Schrödinger's equation in the absence of measurements (collapses of the wave function), *etc*. Granted, these examples have much simpler dynamics than GR. Newton's 2nd law and Schrödinger's are ordinary differential equations. Newton's Law of Gravitation and Maxwell's are PDEs, but they are linear. But they reveal that the same reason that gives GR so much richness in its physical description, also cripples its mathematical understanding, and possibly its predictability.
 
-On the other hand, the *global* proof of existence and uniqueness of solutions is still an open problem. The theorems of existence of spacetime singularities, and the possible existence of Cauchy horizons, are especially crippling in this regard. The weak and strong cosmic censorship conjecture were formulated in an attempt to mitigate this situation by restoring GR's determinism for asymptotic observers. Nevertheless, very recently, evidence against these censorship conjectures started piling up.
+A detailed study of GR's dynamics needs to address the proof of existence and uniqueness of its solutions. As mentioned, a natural step is to attempt to formulation of a well-posed Cauchy problem for Einstein's equations. However, this has proven to be difficult to do. 
 
-One now has to wonder how predictive GR really is?
+An important tool in this endeavor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave-like equations). Choquet-Bruhat theorem then guarantees, at least, the *local* existence and uniqueness of solutions.
+
+The Arnowitt-Deser-Misner (ADM) formalism plays a major role in clarifying Choquet-Bruhat's results. But it also implies a particular choice of global spacetime foliation. This is a much more restricted framework, applicable to only a subspace of solutions.
+
+Finally, the *global* proof of existence and uniqueness is still an open problem in the mathematical-physics of GR. In fact, the theorems of existence of spacetime singularities, and the possible existence of Cauchy horizons indicate that a global proof might not exist. The Weak and Strong Cosmic Censorship Conjectures (CCCs) were formulated in an attempt to mitigate this situation. Nevertheless, recent and old results are pilling up against the validity of CCCs.
+
+One is then left wondering how predictive GR really is.
 
 ## The harmonic gauge
 
-GR has dynamics invariant under the group of diffeomorphism maps among Lorentzian 4-manifolds. This means that its physical solutions are equivalence classes under these maps. Each class, or each physical solution, has many (actually an infinite number) equivalent representatives. This enormous redundancy implies that Einstein's equations are plagued with pure gauge artifacts, making them more complex than necessary to describe the physical degrees of freedom of the gravitational field.
+GR has dynamics invariant under the group of diffeomorphisms among Lorentzian 4-manifolds. This means that its physical solutions are equivalence classes under these maps. Each class, or each physical solution, has many (actually, an infinite number) equivalent representatives. This enormous redundancy implies that Einstein's equations are plagued with *gauge artifacts*, making them more complex than actually necessary to describe the physics of the gravitational field.
 
-To gauge fix the invariance under diffeomorphisms gives us a way to simplify Einstein's equations without really sacrificing its physical content. A convenient choice is the so-called harmonic gauge fix condition, defined by the constraint equations, $\Box x^{\mu} = 0$, where $\Box \equiv g^{\mu \nu} \nabla_{\mu} \nabla_{\nu}$ is the d'Alembertian operator in a curved spacetime. Applying this condition to Einstein's equations in vacuum, $R_{\mu \nu} = 0$, shapes them into the form $\Box g_{\mu \nu} = N_{\mu \nu}$, where $N_{\mu \nu}$ are non-linear terms up to the 1st derivative of $g_{\mu \nu}$.
+Gauge fixing these redundancies give us a way to simplify Einstein's equations without sacrificing its physical content. A cleaver choice is the so-called harmonic gauge fixing conditions, defined by 4 the constraint equations,
 
-The wave-like equations $\Box g_{\mu \nu} = N_{\mu \nu}$ are mathematically classified as a set of quasi-linear hyperbolic PDEs. Luckily, this branch of Analysis is particularly more well-developed than the branch of fully non-linear generic PDEs. For instance, the local existence and uniqueness of their solutions are proven in a result known as the Cauchy-Kowalevski (CK) theorem.
+$$
+\Box x^{\mu} = 0 \;,
+$$
 
-In summary, the harmonic gauge is important because it allows us to prove that, at the very least, GR is a deterministic theory in a small enough neighborhood of its solution space.
+where $\Box \equiv g^{\mu \nu} \nabla_{\mu} \nabla_{\nu}$ is the d'Alembertian differential operator.
+
+Applying the harmonic gauge conditions to Einstein's equations in vacuum shapes them into the form
+
+$$
+\tilde{\Box} g_{\mu \nu} = N_{\mu \nu} \left( g, \partial g\right)  \;,
+$$
+
+where $\tilde{\Box} \equiv g^{\mu\nu}\partial_{\mu}\partial_{\nu}$, and $N_{\mu \nu}$ is a smooth non-linear function up to the 1st derivative of $g_{\mu \nu}$. These are wave-like equations, mathematically classified as a set of quasi-linear hyperbolic PDEs.
+
+Luckily, the branch of Analysis dealing with quasi-linear hyperbolic PDEs is particularly more well-developed than the one of fully non-linear generic PDEs. For instance, if $N_{\mu \nu}$ were to be analytic, then the local existence and uniqueness would automatically follow due to the so-called Cauchy-Kowalevski theorem. Unluckily, $N_{\mu \nu}$ is smooth but non-analytical in most physical situations.
+
+In 1952, mathematical-physicist Yvonne Choquet-Bruhat managed to relax the analyticity condition via the use of Sobolev spaces (see [a review][arxiv/yvonne] by Yvonne herself). Her theorem was fully applicable to Einstein's equation in the harmonic gauge, and thus guaranteed the local well-posedness of its Cauchy problem. In other words, Yvonne proved that GR has a deterministic evolution in a small enough neighborhood of its solution space.
+
+[arxiv/yvonne]: https://arxiv.org/pdf/1410.3490
 
 ## The ADM formalism
 
-Let's consider $\left(X, g_{\mu \nu}\right)$ a Lorentzian 4-manifold. If foliatable, there exists a diffeomorphism map $f: X \mapsto \mathbb{R}\times\Sigma$, check Figure 1. This allows to define in $X$ a 1-parameter family of spacelike 3-manifolds, $\Sigma_{\lambda} \equiv f^{-1} \left( \left\\{\lambda \right\\} \times \Sigma \right) \; ; \; \lambda \in \mathbb{R} $, which are called the "leaves" in this foliation of $X$. Each leaf $\Sigma_{\lambda}$ has an induced 3-metric, $h_{ij} \left(\lambda\right)$, and an extrinsic curvature, $K_{ij} \left(\lambda\right)$. Furthermore, there also exists a globally well-defined, smooth, timelike vector field, $\partial_{\lambda}$, that generates a global flow of time.
+Let's consider $\left(X, g_{\mu \nu}\right)$ a Lorentzian 4-manifold. If foliatable, there exists a diffeomorphism map $f: X \mapsto \mathbb{R}\times\Sigma$. This allows to define in $X$ a 1-parameter family of spacelike 3-manifolds, $\Sigma_{\lambda} \equiv {f}^{-1} \left( \left\\{\lambda \right\\} \times \Sigma \right) \; ; \; \lambda \in \mathbb{R} $, which are called the "leaves" in this foliation, check Figure 1.
 
 <div align="center">
-<script type="text/tikz">
-\begin{tikzpicture}
-% Left blob (bean shape)
-\fill[gray!50] (-3,0) .. controls (-2.5,1.5) and (-1,1.5) .. (0,0.5)
-                .. controls (0.5,-1) and (-2.5,-1.5) .. (-3,0);
-\draw[thick] (-3,0) .. controls (-2.5,1.5) and (-1,1.5) .. (0,0.5)
-                .. controls (0.5,-1) and (-2.5,-1.5) .. (-3,0);
-
-% Mark the X inside the blob
-\draw[thick] (-2.2,0.2) -- (-1.8,-0.2);
-\draw[thick] (-2.2,-0.2) -- (-1.8,0.2);
-
-% Arrow from the blob to the product space
-\draw[->, thick] (0.5,0) -- (2,0) node[midway, above] {$\varphi$};
-
-% Product space (3 stacked sheets)
-\begin{scope}[xshift=3cm]
-    % First sheet
-    \fill[gray!30] (-1,1) .. controls (-0.5,1.5) and (0.5,1.5) .. (1,1)
-                   .. controls (0.5,0.5) and (-0.5,0.5) .. cycle;
-    \draw[thick] (-1,1) .. controls (-0.5,1.5) and (0.5,1.5) .. (1,1);
-    \draw[thick] (-1,1) .. controls (-0.5,0.5) and (0.5,0.5) .. (1,1);
-
-    % Second sheet
-    \fill[gray!30] (-1,0) .. controls (-0.5,0.5) and (0.5,0.5) .. (1,0)
-                   .. controls (0.5,-0.5) and (-0.5,-0.5) .. cycle;
-    \draw[thick] (-1,0) .. controls (-0.5,0.5) and (0.5,0.5) .. (1,0);
-    \draw[thick] (-1,0) .. controls (-0.5,-0.5) and (0.5,-0.5) .. (1,0);
-
-    % Third sheet
-    \fill[gray!30] (-1,-1) .. controls (-0.5,-0.5) and (0.5,-0.5) .. (1,-1)
-                   .. controls (0.5,-1.5) and (-0.5,-1.5) .. cycle;
-    \draw[thick] (-1,-1) .. controls (-0.5,-0.5) and (0.5,-0.5) .. (1,-1);
-    \draw[thick] (-1,-1) .. controls (-0.5,-1.5) and (0.5,-1.5) .. (1,-1);
-
-    % Vertical lines connecting sheets
-    \draw[thick] (-1,1) -- (-1,-1);
-    \draw[thick] (1,1) -- (1,-1);
-\end{scope}
-
-% Label for the product space
-\node at (5,-1.5) {$\mathbb{R} \times \Sigma$};
-\end{tikzpicture}
-</script>
+        {% include figure.liquid loading="eager" path="assets/img/svg/foliation.webp" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-  Figure 1: Foliability of spacetime.
+  Figure 1: Foliability of $X$.
 </div>
 </div>
 
-Foliability implies something which is very mundane for us: that space and time are separated, orthogonal, entities. We measure space with a ruler, time with a clock. Ever a situation arose in which we needed both a rule and a clock to measure space, or a ruler and a clock to measure time. And, to be frank, this is always true as long as we are measuring a small enough neighborhood of spacetime (most of us never even left Earth anyway). However, in theory, this cannot be guaranteed over the entire spacetime (globally) for whatever solution of GR. This is a feature (not a bug) of its full invariance under diffeomorphism maps. Hence, if we want to establish a global notion of time evolution, initial data, *etc*. (necessary for a well-defined Cauchy problem), we need to assume foliability and make use of a foliation.
+Each leaf $\Sigma_{\lambda}$ has an induced 3-metric, $h_{ij} \left(\lambda\right)$, and an extrinsic curvature, $K_{ij} \left(\lambda\right)$. Furthermore, there also exists a globally well-defined, smooth, timelike vector field, $\partial_{\lambda}$, that generates a flow of time.
 
-The Arnowitt-Deser-Misner (ADM) formalism makes use of a foliation to split Einstein's equations apart. Mind that there are many (*a.k.a.* infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because the result of projecting Einstein's equations onto the leaves, separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as, presumably, their Cauchy data.
+Foliability implies something which is very mundane for us: that space and time are separable, almost orthogonal entities. We measure space with a ruler, time with a clock. Not ever a situation arose in which we needed both a rule and a clock to measure space, or a ruler and a clock to measure time. And, to be frank, this is always true as long as we are measuring a small enough neighborhood of spacetime (most of us never even left Earth anyway).
 
-## Constraint equations
+In GR, however, foliability cannot always be guaranteed over the entire spacetime manifold (globally). Mind, this is a feature, not a bug, of GR's full invariance under diffeomorphism. Behind the scenes, the foliability condition actually selects solutions with partially broken invariance under diffeomorphisms. A residual symmetry still exists on the leaves, but the breakage is just enough to allow us to establish a global notion of time, time evolution, initial data, *etc*. All welcomed ingredients for a well-posed Cauchy problem.
 
-Not every Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ is compatible with a foliation of $\left(X, g_{\mu \nu}\right)$. The constraint equations for the Cauchy data exist to ensure this compatibility
+The ADM formalism makes use of the foliability condition to split Einstein's equations apart. Mind, there are many (*a.k.a.* infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because, by projecting Einstein's equations onto the leaves, ADM precisely separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as their Cauchy data.
 
-Let $\pi_{ij} \equiv 4 \pi \sqrt{h} \left( K_{ij} - h_{ij} K \right) \; ; \; K \equiv h^{ij}K_{ij} $ be the conjugated momenta of $h_{ij}$. Einstein's equation $R_{00} = 0$, when projected onto $\Sigma_{\lambda}$, results in the famous Hamiltonian constraint,
+### The constraint equations
+
+Not every Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ is compatible with a foliation of $\left(X, g_{\mu \nu}\right)$. The constraint equations for the Cauchy data exist to ensure this compatibility. Yvonne deduced these equations from energy estimates and properties of Solobev spaces. But, using the ADM formalism, they naturally pop up as follows. 
+
+TODO: rewrite paragraphs below.
+
+Let $\pi_{ij} \equiv 4 \pi \sqrt{h} \left( K_{ij} - h_{ij} K \right) \; ; \; K \equiv h^{ij}K_{ij} $ be the conjugated momenta of $h_{ij}$. Einstein's equation, $R_{00} = 0$, when projected onto the leaves, $\Sigma_{\lambda}$, results in the famous Hamiltonian constraint,
 
 $$ H = 0 \;, $$
 
-where $H \equiv - \sqrt{h} \left[ R(h) + h^{-1} \left( \pi^{2} - \pi_{ij}\pi^{ij} \right) \right] \; ; \; \pi \equiv h^{ij}\pi_{ij}$, and $R(h)$ is the curvature scalar of $h_{ij}$. On the other hand, when $R_{0i} = 0$ is projected onto $\Sigma_{\lambda}$, the result is
+where $H \equiv - \sqrt{h} \left[ R^h + h^{-1} \left( \pi^{2} - \pi_{ij}\pi^{ij} \right) \right] \; ; \; \pi \equiv h^{ij}\pi_{ij}$, and $R^h$ is the curvature scalar of $h_{ij}$. On the other hand, when $R_{0i} = 0$ is projected onto $\Sigma_{\lambda}$, the result is
 
 $$ P^i = 0 \;, $$
 
@@ -124,13 +107,13 @@ $$
 
 for the quantum state $\lvert \Psi \rangle$ of the entire Universe. As well as to the problem of time, Ashtekar variables (complex self-dual formulation of GR), and the loop representation of C. Rovelli and L. Smolin, giving birth to Loop Quantum Gravity.
 
-## Dynamical equations
+### The dynamical ones
 
 The flow of time happens in the direction of the vector field $\partial_{\lambda} = \alpha \hat{n} + \vec{\beta}$, where $\alpha$ is the so-called lapse function, $\hat{n}$ is the unit vector normal to $\Sigma_{\lambda}$, and $\vec{\beta}$ the displacement vector implicitly given by the orthogonality condition $\hat{n} \cdot \vec{\beta} = 0$.
 
 The dynamical equations satisfied by $h_{ij}$ can be obtained from the very definition of extrinsic curvature, and give how the local geometry of $\Sigma_{\lambda}$ and $\Sigma_{\lambda+ \delta\lambda}$ are connected to each other, where $\delta\lambda$ is an infinitesimally small passage of time. Explicitly, $K_{ij} \equiv - L_{\alpha \hat{n}} h_{ij} / 2$, where $L_{\alpha \hat{n}}$ is the Lie derivative along $\alpha\hat{n}$. Solving for $L_{\partial_{\lambda}} h_{ij}$, one arrives at
 
-$$ \mathcal{L}_{\partial_{\lambda}} h_{ij} = - 2 K_{ij} + \mathcal{L}_{\vec{\beta}} h_{ij} \;. $$
+$$ \partial_{\lambda} h_{ij} = - 2 K_{ij} + \mathcal{L}_{\vec{\beta}} h_{ij} \;. $$
 
 On the other hand, the dynamical equations for $K_{ij}$ are given by the projection of Einstein's equations $R_{ij} = 0$ onto the leaves $\Sigma_{\lambda}$. Explicitly,
 
@@ -148,11 +131,28 @@ Going back to the CK theorem, the proof of local uniqueness are in one-to-one co
 
 The expectation that the solution space of Einstein's equations contained exclusively globally hyperbolic solutions was, ironically, short-lived. By 1970, the Penrose-Hawking singularity theorems were fully developed. Additionally, Penrose very clearly defined the concept of Cauchy horizons. These are spacetime boundaries present, *e.g.*, inside rotating black holes, and beyond which the Cauchy problem for Einstein's equations becomes ill-defined. At the time, these results indicated the embarrassing possibility that GR might not be a fully predictive theory.
 
-## Cosmic censorship hypotheses
-
-The situation bothered even Penrose himself, which forced him to conjecture
-
 [^1]: No need to mind what a Cauchy surface is. Just that, if it exists within a time interval, then the Cauchy problem for Einstein's equations is well-defined within this interval.
-## Conclusions
 
-This is your conclusions.
+## Cosmic censorship conjectures
+
+The situation bothered Penrose himself, making him immediately hypothesize that every singularity is "hidden" inside an event horizon, known as the Weak Cosmic Censorship Conjecture (WCCC), and that Cauchy horizon are unstable under metric perturbations and thus could never form in a natural setting, known as the Strong Cosmic Censorship Conjecture (SCCC). If true, these conjectures would restore the deterministic nature of Einstein's equations, even if only for infinitely far away (asymptotic) observers.
+
+Since the 1970s, there was a strong expectation that Penrose's CCCs would eventually be proven true. And, indeed, since then we struggled to find natural processes that could generate stable naked singularities (not dressed by an event horizon). If they do exist, they are likely quite rare. Additionally, there is mounting evidence that Cauchy horizons are inherently unstable if the matter fields do respect the Weak Energy Condition (WEC).
+
+So, how come, we are in the year 2025, and there is still no consensus in the scientific community about the real predictive power of GR? Well, the answer is, at least, 3-fold.
+
+Firstly, we know since the 1990s that WCCC is mathematically false. Physicists P. S. Joshi, I. H. Dwivedi, D. Christodoulou, and others, have proven that naked singularities can form in specific cases through the collapse of matter (see citation for a review). These result led famous physicist S. Hawking to [concede his original bet][web/hawking-bet-naked-singularity] against naked singularities. Indeed, GR appears to have no internal mechanism to prevent their formation. The only caveat is that Christodoulou's *et al* examples heavily rely on a specific set of Cauchy data (*e.g.*, with perfect spherical symmetry). Nonetheless, there are those who believe it is only a matter of time until we figure out processes capable of generating them under very few Cauchy data assumptions, making them generic enough to occur in Nature.
+
+Secondly, SCCC may not hold true when quantum effects are considered. Quantum matter fields may not always adhere to WECs, and quantum gravity effects further complicate things. Either of these factors could potentially stabilize the Cauchy horizon, making it long-lived.
+
+Thirdly, and finally, SCCC was proven to be false, regardless of quantum effects, in 2017. Researchers from University of Stanford and Princeton developed a mathematical proof of existence of the region inside the Cauchy horizon of Kerr black holes. The only caveat is that the proof holds in the category of continuous spacetimes. Thus, the inherent instability of a Cauchy horizon does not mean that its interior region collapses out of existence into a singularity, as it was previously thought. Instead, it is way less dramatic. It is its smoothness ($C^\infty$ differentiability) that collapses into just continuity ($C^0$). In other words, the region, as well as its metric, survives the gravitational collapse. But, to the best of our knowledge, as only continuous non-differentiable entities[^2].
+
+[^2]: Fair enough, if the metric is only $C^0$, then Einstein's equations are not even valid inside the Cauchy horizon. Thus, we cannot draw any further conclusions about the well-posedness of their Cauchy problem.
+
+[web/hawking-bet-naked-singularity]: https://www.preskill.caltech.edu/old_naked_bet.html
+
+## Conclusions 
+
+So,
+
+ 
