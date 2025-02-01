@@ -53,7 +53,7 @@ $$
 \tilde{\Box} g_{\mu \nu} = N_{\mu \nu} \left( g, \partial g\right)  \;,
 $$
 
-where $\tilde{\Box} \equiv g^{\mu\nu}\partial_{\mu}\partial_{\nu}$, and $N_{\mu \nu}$ is a smooth non-linear function up to the 1st derivative of $g_{\mu \nu}$. These are wave-like equations, mathematically classified as a set of quasi-linear hyperbolic PDEs.
+where $\tilde{\Box} \equiv g^{\mu\nu}\partial_{\mu}\partial_{\nu}$, and $N_{\mu \nu}$ is a smooth non-linear function up to the 1st derivative of $g_{\mu \nu}$. These are wave-like equations, mathematically classified as a set of 2nd order quasi-linear hyperbolic PDEs.
 
 Luckily, the branch of Analysis dealing with quasi-linear hyperbolic PDEs is particularly more well-developed than the one of fully non-linear generic PDEs. For instance, if $N_{\mu \nu}$ were to be analytic, then the local existence and uniqueness would automatically follow due to the so-called Cauchy-Kowalevski theorem. Unluckily, $N_{\mu \nu}$ is smooth but non-analytical in most physical situations.
 
@@ -63,7 +63,7 @@ In 1952, mathematical-physicist Yvonne Choquet-Bruhat managed to relax the analy
 
 ## The ADM formalism
 
-Let's consider $\left(X, g_{\mu \nu}\right)$ a Lorentzian 4-manifold. If foliatable, there exists a diffeomorphism map $f: X \mapsto \mathbb{R}\times\Sigma$. This allows to define in $X$ a 1-parameter family of spacelike 3-manifolds, $\Sigma_{\lambda} \equiv {f}^{-1} \left( \left\\{\lambda \right\\} \times \Sigma \right) \; ; \; \lambda \in \mathbb{R} $, which are called the "leaves" in this foliation, check Figure 1.
+Let's consider $\left(X, g_{\mu \nu}\right)$ a Lorentzian 4-manifold. If foliatable, there exists a diffeomorphism map $f: X \mapsto \mathbb{R}\times\Sigma$. This allows to define in $X$ a 1-parameter family of spacelike 3-manifolds, $\Sigma_{\lambda} \equiv {f}^{-1} \left(\left\\{\lambda \right\\} \times \Sigma \right) \; ; \; \lambda \in \mathbb{R}$, which are called the "leaves" in this foliation, check Figure 1.
 
 <div align="center">
         {% include figure.liquid loading="eager" path="assets/img/svg/foliation.webp" class="img-fluid rounded z-depth-1" %}
@@ -84,19 +84,17 @@ The ADM formalism makes use of the foliability condition to split Einstein's equ
 
 Not every Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ is compatible with a foliation of $\left(X, g_{\mu \nu}\right)$. The constraint equations for the Cauchy data exist to ensure this compatibility. Yvonne deduced these equations from energy estimates and properties of Solobev spaces. But, using the ADM formalism, they naturally pop up as follows. 
 
-TODO: rewrite paragraphs below.
-
-Let $\pi_{ij} \equiv 4 \pi \sqrt{h} \left( K_{ij} - h_{ij} K \right) \; ; \; K \equiv h^{ij}K_{ij} $ be the conjugated momenta of $h_{ij}$. Einstein's equation, $R_{00} = 0$, when projected onto the leaves, $\Sigma_{\lambda}$, results in the famous Hamiltonian constraint,
+Let $\pi_{ij} \equiv 4 \pi \sqrt{h} \left( K_{ij} - h_{ij} K \right) \; ; \; K \equiv h^{ij}K_{ij} $ be the conjugated momenta of $h_{ij}$. Einstein's equation, $R_{00} = 0$, when projected onto the leaves, $\Sigma_{\lambda}$, results in the now famous Hamiltonian constraint,
 
 $$ H = 0 \;, $$
 
-where $H \equiv - \sqrt{h} \left[ R^h + h^{-1} \left( \pi^{2} - \pi_{ij}\pi^{ij} \right) \right] \; ; \; \pi \equiv h^{ij}\pi_{ij}$, and $R^h$ is the curvature scalar of $h_{ij}$. On the other hand, when $R_{0i} = 0$ is projected onto $\Sigma_{\lambda}$, the result is
+where $H \equiv - \sqrt{h} \left[ R^h + h^{-1} \left( \pi^{2} - \pi_{ij}\pi^{ij} \right) \right] \; ; \; \pi \equiv h^{ij}\pi_{ij}$, and $R^h$ is the curvature scalar of $h_{ij}$. On the other hand, when $R_{0i} = 0$ is projected onto $\Sigma_{\lambda}$, the result is the momentum constraint equations
 
 $$ P^i = 0 \;, $$
 
-where $P^i \equiv -2 \nabla_j \pi^{ij}$. These are the 4 constraint equations the Cauchy data has to satisfy in order to be compatible with a foliation of $\left(X, g_{\mu \nu}\right)$.
+where $P^i \equiv -2 \nabla_j \pi^{ij}$.
 
-Here we cannot avoid mentioning that, in quantum gravity, these are the constraint equations that lead to the (also) famous Wheeler-deWitt equations,
+Here, we cannot avoid but mention that, in quantum gravity, these are the constraint equations that lead to the famous Wheeler-DeWitt equations,
 
 $$
 \begin{aligned}
@@ -105,25 +103,49 @@ $$
 \end{aligned}
 $$ 
 
-for the quantum state $\lvert \Psi \rangle$ of the entire Universe. As well as to the problem of time, Ashtekar variables (complex self-dual formulation of GR), and the loop representation of C. Rovelli and L. Smolin, giving birth to Loop Quantum Gravity.
+for the quantum state $\lvert \Psi \rangle$ of the Universe. As well as to the problem of time, Ashtekar variables and a complex self-dual formulation of GR, and the loop representation of Carlo Rovelli and Lee Smolin, finally giving birth to Loop Quantum Gravity.
 
 ### The dynamical ones
 
-The flow of time happens in the direction of the vector field $\partial_{\lambda} = \alpha \hat{n} + \vec{\beta}$, where $\alpha$ is the so-called lapse function, $\hat{n}$ is the unit vector normal to $\Sigma_{\lambda}$, and $\vec{\beta}$ the displacement vector implicitly given by the orthogonality condition $\hat{n} \cdot \vec{\beta} = 0$.
+We discussed how Yvonne evolved her constrained set of Cauchy data via Einstein's equations in the harmonic gauge. It turns out that the ADM formalism produces an even simpler dynamical evolution.
 
-The dynamical equations satisfied by $h_{ij}$ can be obtained from the very definition of extrinsic curvature, and give how the local geometry of $\Sigma_{\lambda}$ and $\Sigma_{\lambda+ \delta\lambda}$ are connected to each other, where $\delta\lambda$ is an infinitesimally small passage of time. Explicitly, $K_{ij} \equiv - L_{\alpha \hat{n}} h_{ij} / 2$, where $L_{\alpha \hat{n}}$ is the Lie derivative along $\alpha\hat{n}$. Solving for $L_{\partial_{\lambda}} h_{ij}$, one arrives at
+First, let us establish that the flow of time happens in the direction of the vector field $\partial_{\lambda} = \alpha \hat{n} + \vec{\beta}$, where $\alpha$ is the so-called lapse function, $\hat{n}$ is the unit vector normal to $\Sigma_{\lambda}$, and $\vec{\beta}$ the displacement vector implicitly given by the orthogonality condition $\hat{n} \cdot \vec{\beta} = 0$, see Figure 2.
 
-$$ \partial_{\lambda} h_{ij} = - 2 K_{ij} + \mathcal{L}_{\vec{\beta}} h_{ij} \;. $$
+The dynamical evolution of $h_{ij}$ can be obtained from the very definition of extrinsic curvature. Explicitly, $K_{ij} \equiv - L_{\alpha \hat{n}} h_{ij} / 2$, where $L_{\alpha \hat{n}}$ is the Lie derivative along $\alpha\hat{n}$. Solving for $L_{\partial_{\lambda}} h_{ij}$, one arrives at
 
-On the other hand, the dynamical equations for $K_{ij}$ are given by the projection of Einstein's equations $R_{ij} = 0$ onto the leaves $\Sigma_{\lambda}$. Explicitly,
+$$ \partial_{\lambda} h_{ij} = - 2 K_{ij} + L_{\vec{\beta}} h_{ij} \;. $$
 
-$$ \partial_{\lambda} K_{ij} = \alpha \left[ R_{ij} \left(h\right) + K_{ij} K - 2 K_{ik} K_j^k \right] \;,  $$ 
+This is set of 10 quasi-linear 1st order PDEs which give how the intrinsic local 3-geometry changes as we pass from one leaf, let's say $\Sigma_{\lambda}$, to another infinitesimally close to it, let's say $\Sigma_{\lambda + d\lambda}$.
 
-which, again, gives how the local curvature in $\Sigma_{\lambda}$ and $\Sigma_{\lambda + \delta\lambda}$ are connected to each other.
+On the other hand, the dynamical evolution for $K_{ij}$ is given by the projection of Einstein's equations, $R_{ij} = 0$, onto the leaves. Explicitly,
 
-If GR is indeed fully deterministic in foliatable spacetimes, these dynamical equations can be used to evolve the Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ on a leaf (a value of $\lambda$) to any other leaf (any other value of $\lambda$). This is equivalent to know the entire plot of a movie from just a screenshot (unfortunately, not a rare occurrence these days). Here, however, the movie is the entire history of the Universe. This is what theoretical physicists and mathematicians mean when they speak of "a well-defined Cauchy problem".
+$$ \partial_{\lambda} K_{ij} = \alpha \left[ R_{ij} \left(h\right) + K_{ij} K - 2 K_{ik} K_j^k \right] \;.  $$ 
 
-## Global existence and uniqueness of solutions
+This is another set of 10 quasi-linear 1st order PDEs, which gives how the local curvature, due to how the leaves "sit inside $X$", changes within the infinitesimal time interval that separates $\Sigma_{\lambda}$ from $\Sigma_{\lambda + d\lambda}$.
+
+So, we can exchange Einstein's equations in the harmonic gauge, used by Yvonne and given by 10 2nd order PDEs, with 20 1st order PDEs in the ADM formulation. Surely, we now have double the equations to solve, but they are also way simpler. This is in full analogy with the passage from the Lagrangian to the Hamiltonian formulation of Classical Mechanics. Particularly how $n$ Euler-Lagrange equations becomes $2n$ Hamilton's equations. In fact, one way to interpret the ADM formalism is as a Hamiltonian description of GR.
+
+We stress that if GR is indeed fully deterministic, these dynamical equations can be used to evolve the Cauchy data $\left(\Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ to ANY other leaf in the foliation, see Figure 3. This would be equivalent to know the entire plot of a movie from just a screenshot (unfortunately, not a rare occurrence these days). However, here the movie is the entire history of the Universe. This is what theoretical physicists and mathematicians mean when they speak of "a well-posed Cauchy problem for GR".
+
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/svg/timeflow.webp" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            Figure 2: Flow of time.
+        </div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/svg/evolution.webp" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            Figure 3: Evolution of Cauchy data.
+        </div>
+    </div>
+</div>
+
+## Global well-posedness
+
+TODO: rewriten below.
 
 The existence of solutions in short time intervals are guaranteed by the hyperbolic form Einstein's equations assume in the harmonic gauge. In 1969, mathematical-physicists Y. Choquet-Bruhat and R. Geroch were able to extend this result to arbitrary time intervals, but only inside the subspace of asymptotic flat solutions. To this day, the global proof of existence of arbitrary solutions is an open problem in the mathematical-physics of GR.
 
@@ -133,7 +155,7 @@ The expectation that the solution space of Einstein's equations contained exclus
 
 [^1]: No need to mind what a Cauchy surface is. Just that, if it exists within a time interval, then the Cauchy problem for Einstein's equations is well-defined within this interval.
 
-## Cosmic censorship conjectures
+## CCCs
 
 The situation bothered Penrose himself, making him immediately hypothesize that every singularity is "hidden" inside an event horizon, known as the Weak Cosmic Censorship Conjecture (WCCC), and that Cauchy horizon are unstable under metric perturbations and thus could never form in a natural setting, known as the Strong Cosmic Censorship Conjecture (SCCC). If true, these conjectures would restore the deterministic nature of Einstein's equations, even if only for infinitely far away (asymptotic) observers.
 
