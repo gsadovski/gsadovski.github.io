@@ -21,15 +21,15 @@ Einstein's equations in vacuum, given by $R_{\mu \nu} = 0$, consist of ten coupl
 
 Determinism is an important feature of physical theories. It implies that the whole past and future (the history) of a system can be evaluated, with infinite precision, from a minimal set of data. This makes deterministic theories extremely predictive, and thus appealing to the scientific framework.
 
-Mathematically, determinism is modelled by a system of equations whose solutions exist, and can be uniquely determined. Usually the system is differential with respect to some "time" parameter, and the minimal set of data is the Cauchy (initial) data. Systems like these are said to have a *well-posed Cauchy problem*.
+Mathematically, determinism can be captured by a system of equations whose solutions exist, and can be uniquely determined. Usually, the system is differential with respect to some affine parameter (time), and the minimal set of data is the Cauchy (initial) data. Systems like these are said to be a *well-posed Cauchy problem*.
 
-Examples in Physics are plenty: Newton's 2nd Law, Newton's Law of Gravitation, Maxwell's equations, Schrödinger's equation in the absence of measurements (collapses of the wave function), *etc*. Granted, these examples have much simpler dynamics than GR. Newton's 2nd law and Schrödinger's are ordinary differential equations. Newton's Law of Gravitation and Maxwell's are PDEs, but they are linear. Nonetheless, these examples reveal that what gives GR so much physical richness, is also what cripples its mathematical understanding, and possibly its predictability.
+Examples in Physics are plenty: Newton's 2nd Law, Newton's Law of Gravitation, Maxwell's equations, Schrödinger's equation in the absence of measurements (collapses of the wave function), *etc*. Granted, these examples have much simpler dynamics than GR. Newton's 2nd law and Schrödinger's are ordinary differential equations. Newton's Law of Gravitation and Maxwell's are PDEs, but they are linear. Nonetheless, they reveal that what gives GR so much physical richness, is also what cripples its mathematical understanding, and possibly its predictability.
 
 A detailed study of GR's dynamics needs to address the proof of existence and uniqueness of its solutions. As mentioned, a natural step is to attempt to formulate a well-posed Cauchy problem for Einstein's equations. However, this has proven to be difficult to do. 
 
-An important tool in this endeavor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave-like equations). Choquet-Bruhat theorem then guarantees, at least, the *local* existence and uniqueness of solutions. In other words, GR locally is a well-posed Cauchy problem.
+An important tool in this endeavor is the use of the harmonic gauge condition. In this gauge, Einstein's equations assume the form of quasi-linear hyperbolic PDEs (wave-like equations). Choquet-Bruhat theorem then guarantees, at least, the *local* existence and uniqueness of solutions. In other words, GR is locally a well-posed Cauchy problem.
 
-The Arnowitt-Deser-Misner (ADM) formalism plays a major role in clarifying Choquet-Bruhat's results. But it also implies a particular choice of global spacetime foliation. This is a much more restricted framework, applicable to only a subspace of solutions.
+The Arnowitt-Deser-Misner (ADM) formalism plays a major role in clarifying Choquet-Bruhat's results. But it also implies a particular choice of global spacetime foliation. This is a more restricted framework, applicable to only a subspace of solutions.
 
 Finally, the *global* proof of existence and uniqueness is still an open problem in the mathematical-physics of GR. In fact, the theorems of existence of spacetime singularities, and the possible existence of Cauchy horizons indicate that a global proof might not exist. In other words, GR might not be a globally well-posed Cauchy problem.
 
@@ -37,9 +37,9 @@ The Weak and Strong Cosmic Censorship Conjectures (CCCs) were formulated in an a
 
 ## The harmonic gauge
 
-GR has dynamics invariant under the group of diffeomorphisms among Lorentzian 4-manifolds. This means that its physical solutions are equivalence classes under these maps. Each class, or each physical solution, has many (actually, an infinite number of) equivalent representatives. This enormous redundancy implies that Einstein's equations are plagued with *gauge artifacts*, making them more complex than actually necessary to describe the physics of the gravitational field.
+GR has dynamics invariant under the group of diffeomorphisms among Lorentzian 4-manifolds. This means that its physical solutions are equivalence classes under these maps. Each class, or each physical solution, has many (actually, infinite) equivalent representatives. This enormous redundancy implies that Einstein's equations are plagued with *gauge artifacts*, making them more complex than actually necessary to describe the physics of the gravitational field.
 
-Gauge fixing these redundancies give us a way to simplify Einstein's equations without sacrificing its physical content. A cleaver choice is the so-called harmonic gauge fixing conditions, defined by 4 the constraint equations,
+Gauge fixing these redundancies give us a way to simplify Einstein's equations without sacrificing its physical content. A cleaver choice is the so-called harmonic gauge fixing conditions, defined by 4 constraint equations,
 
 $$
 \Box x^{\mu} = 0 \;,
@@ -55,7 +55,7 @@ $$
 
 where $\tilde{\Box} \equiv g^{\mu\nu}\partial_{\mu}\partial_{\nu}$, and $N_{\mu \nu}$ is a smooth non-linear function up to the 1st derivative of $g_{\mu \nu}$. These are wave-like equations, mathematically classified as a set of 2nd order quasi-linear hyperbolic PDEs.
 
-Luckily, the branch of Analysis dealing with quasi-linear hyperbolic PDEs is particularly more well-developed than the one of fully non-linear generic PDEs. For instance, if $N_{\mu \nu}$ were to be analytic, then the local existence and uniqueness would automatically follow due to the so-called Cauchy-Kowalevski theorem. Unluckily, $N_{\mu \nu}$ is smooth but non-analytical in most physical situations.
+Luckily, the branch of Analysis dealing with quasi-linear hyperbolic PDEs is more developed than the one of fully non-linear generic PDEs. For instance, if $N_{\mu \nu}$ were to be analytic, then the local existence and uniqueness would automatically follow due to the so-called Cauchy-Kowalevski theorem. Unluckily, $N_{\mu \nu}$ is smooth but non-analytical in most physical situations.
 
 In 1952, mathematical-physicist Yvonne Choquet-Bruhat managed to relax the analyticity condition via the use of Sobolev spaces (see [a review][inspire/choquet-bruhat-review] by Yvonne herself). Her theorem was fully applicable to Einstein's equation in the harmonic gauge, and thus guaranteed the local well-posedness of its Cauchy problem. In other words, Yvonne proved that GR has a deterministic evolution in a small enough neighborhood of its solution space.
 
@@ -76,9 +76,9 @@ Each leaf $\Sigma_{\lambda}$ has an induced 3-metric, $h_{ij} \left(\lambda\righ
 
 Foliability implies something very mundane for all of us: that space and time are separable, almost orthogonal entities. We measure space with a ruler, time with a clock. Not ever a situation arose in which we needed both a rule and a clock to measure space, or a ruler and a clock to measure time. And, to be frank, this is always true as long as we are measuring a small enough neighborhood of spacetime (most of us never even left Earth anyway).
 
-In GR, however, foliability cannot always be guaranteed over the entire spacetime manifold (globally). Mind, this is a feature, not a bug, of GR's full invariance under diffeomorphisms. Behind the scenes, the foliability condition actually selects solutions with partially broken invariance under diffeomorphisms. A residual symmetry still exists on the leaves, but the breakage is just enough to allow us to establish a global notion of time, time evolution, initial data, *etc*. All welcomed ingredients for a well-posed Cauchy problem.
+In GR, however, foliability cannot always be guaranteed over the entire spacetime manifold (globally). Mind, this is a feature, not a bug, of GR's full invariance under diffeomorphisms. Behind the scenes, the foliability condition actually selects solutions with partially broken invariance. A residual symmetry still exists on the leaves, but the breakage is just enough to allow a global notion of time, time evolution, initial data, *etc*. All welcomed ingredients for a well-posed Cauchy problem.
 
-The ADM formalism uses the foliability condition to split Einstein's equations apart. Mind, there are many (*a.k.a.*, infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because, by projecting Einstein's equations onto the leaves, ADM precisely separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as their Cauchy data.
+The ADM formalism uses the foliability condition to split Einstein's equations apart. Mind, there are many (infinite) ways to split Einstein's equations apart, but the ADM one is remarkable because, by projecting Einstein's equations onto the leaves, ADM precisely separates them in constraint *versus* dynamical equations. Concurrently, it establishes the trio $\left( \Sigma_{\lambda}, h_{ij}, K_{ij}\right)$ as their Cauchy data.
 
 ### The constraint equations
 
@@ -94,7 +94,7 @@ $$ P^i = 0 \;, $$
 
 where $P^i \equiv -2 \nabla_j \pi^{ij}$.
 
-Together, the Hamiltonian and momentum constraints form a system of 4 differential equations that every Cauchy data for Einstein's equations have to obey.
+Together, the Hamiltonian and momentum constraints form a system of 4 PDEs that every Cauchy data for Einstein's equations have to obey.
 
 Here, we cannot avoid but mention that, in quantum gravity, these are the constraint equations that lead to the famous Wheeler-DeWitt equations,
 
@@ -161,11 +161,11 @@ Going back to the Choquet-Bruhat theorem, the local proof of uniqueness is in on
 
 In 1969, Yvonne, now collaborating with Robert Geroch, developed the concept of a *maximal globally hyperbolic developed* (MGHD), and proved its uniqueness up to diffeomorphisms. This is the largest possible piece of spacetime that admits a Cauchy foliation. And, thus, for which Einstein's equations imply a deterministic evolution. In particular, the [Choquet-Bruhat-Geroch result][inspire/choquet-bruhat-geroch] represents a global uniqueness theorem for solutions diffeomorphic to a MGHD. These are called *globally hyperbolic spacetimes*.
 
-The expectation that the space of all solutions to Einstein's equations contained exclusively globally hyperbolic spacetimes was, ironically, short-lived. By 1970, the Penrose-Hawking singularity theorems were fully developed. In the presence of spacetime singularities, inextensible differentiable timelike curves acquired finite proper time (they end). Thus, singularities represent boundaries for the MGHD. Additionally, singularities can spoil the global well-posedness in a number of different way, *e.g.*, uniqueness alone can be broken by caustics (the focusing of geodesics into a single point), see Figure 4.
+The expectation that the space of all solutions to Einstein's equations contained exclusively globally hyperbolic spacetimes was, ironically, short-lived. By 1970, the Penrose-Hawking singularity theorems were fully developed. In the presence of spacetime singularities, inextensible differentiable timelike curves acquire finite proper time (they end). Thus, singularities represent boundaries for the MGHD. Additionally, they can spoil the global well-posedness in a number of other way, *e.g.*, uniqueness can be broken by caustics (the focusing of geodesics into a single point), see Figure 4.
 
-Penrose also very clearly defined the concept of Cauchy horizons (CHs). These also represent boundaries of the MGHD, beyond which there are inextensible differentiable timelike curves that never punctured a Cauchy surface in the MGHD. In other words, a fragment of the movie that couldn't be predicted from the initial snapshot.
+Penrose also very clearly defined the concept of Cauchy horizons (CHs). These are boundaries for MGHD, beyond which there are inextensible differentiable timelike curves that never punctured a Cauchy surface in the MGHD. In other words, a fragment of the movie that couldn't be predicted from the initial snapshot.
 
-CHs are inevitable when closed timelike curves (CTCs) are present, *e.g.*, inside rotating black holes. CTCs is just a fancy name for time travel. They break uniqueness by puncturing the would-be Cauchy surface many times over, see figure 5.
+CHs are inevitable when closed timelike curves (CTCs) are present, *e.g.*, inside rotating black holes. CTC is just a fancy name for time travel. It breaks uniqueness by puncturing the would-be Cauchy surface many times over, see figure 5.
 
 Clearly, all these results indicated the very real (and embarrassing) possibility that GR indeed is not a globally well-posed theory, *i.e.*, it is not deterministic.
 
@@ -199,11 +199,11 @@ So, how come, we are in the year 2025, and there is still no consensus in the sc
 
 Firstly, we know since the 1990s that WCCC is mathematically false. Physicists [P. S. Joshi, I. H. Dwivedi][inspire/joshi-dwivedi], [D. Christodoulou][inspire/christodoulou], and others, have proven that naked singularities can form in specific cases through the collapse of matter. These results led famous physicist Stephen Hawking to [concede his original bet][web/hawking-bet-naked-singularity] against naked singularities. Indeed, GR appears to have no internal mechanism to prevent their formation.
 
-The only caveat is that these examples heavily rely on a specific set of Cauchy data (*e.g.*, with perfect spherical symmetry). Nonetheless, there are those who believe it is only a matter of time until we figure out processes capable of generating them under very few assumptions, making them generic enough to occur in Nature.
+The only caveat is that these examples heavily rely on a specific set of Cauchy data (*e.g.*, with perfect spherical symmetry). Nonetheless, there are those who believe it is only a matter of time until we figure out processes capable of generating them under very few assumptions, making naked singularities generic enough to occur in Nature.
 
 Secondly, SCCC may not hold true when quantum effects are taken into account. Quantum fields do not always adhere to WECs, and quantum gravity effects may further complicate this discussion. Either of these factors could potentially stabilize the Cauchy horizon, making it long-lived.
 
-Thirdly, and finally, SCCC has been proven to be mathematically false twice now, regardless of quantum effects. In 2003, M. Dafermos developed a [proof of existence of the region across the CH inside a charged (Reissner-Nordström) black hole][inspire/dafermos]. In 2017, Dafermos, now collaborating with J. Luk, managed to develop a [similar proof for the CH inside a rotating (Kerr) black hole][inspire/dafermos-luk].
+Thirdly, and finally, SCCC has been proven mathematically false twice now, regardless of quantum effects. In 2003, M. Dafermos developed a [proof of existence of the region across the CH inside charged (Reissner-Nordström) black holes][inspire/dafermos]. In 2017, Dafermos and J. Luk, managed to develop a [similar proof for the CH inside rotating (Kerr) black holes][inspire/dafermos-luk].
 
 
 The caveat is that these proofs hold only in the category of continuous spacetimes. The inherent instability of CHs when WECs are satisfied does not mean its interior region collapses out of existence into a singularity, as previously thought. Instead, in a much less dramatic manner, its smoothness ($C^\infty$ differentiability) collapses into just continuity ($C^0$). Black holes' CHs, its interior region, and the metric field there survive the gravitational collapse but as continuous non-differentiable structures. Fair enough, if the metric is only $C^0$, then Einstein's equations are not even valid there. And, once again, we are unable to draw further conclusions about their well-posedness.
@@ -220,10 +220,10 @@ GR's situation looks grim at the moment. So much so, we are left to discuss soci
 
 Most physicists today have adopted the optimistic view that "GR is such a good theory that it predicts its own demise". And, that its ultraviolet completion, whatever it is, will clarify the nature of singularities, Cauchy horizons, *etc*., ultimately reestablishing the global well-posedness of the spacetime evolution.
 
-On the other hand, there is also the pessimistic (or realistic, depending on where you sit) branch. This branch takes these results at face value, and points out less singular alternatives to GR as paths forward. Additionally, it emphasizes that quantum gravity, something that we do not even agree on what it is after +100 years of research, has no obligation to solve these issues. If it will, it's anyone's guess as it stands.
+On the other hand, there is also the pessimistic (or realistic, depending on where you sit) branch. This branch takes these results at face value, and points out less singular alternatives to GR as paths forward. Additionally, it emphasizes that quantum gravity, something which we don't agree on what it is even after +100 years of research, has no obligation to solve these issues. If it will, it's anyone's guess right now.
 
-Personally, I sit fuzzily in the middle. I acknowledge the optimistic point of view, which might very well be the right path. However, I also cannot help but sense a bit of biased effort to save GR. To spin the narrative, and turn a well-defined problem into "a feature" via marketing tactics. I do not particularly subscript to this aspect of the optimistic branch.
+Personally, I sit fuzzily in the middle. I acknowledge the optimistic point of view, which might very well be the path forward. However, I also cannot help but sense a bit of biased effort to save GR. To spin the narrative, and turn a bug into a feature via marketing tactics. I do not particularly subscript to this aspect of the optimistic branch.
 
-The pessimistic branch generally have good points. Alternatives to GR, sometimes for historical rather than scientific reasons, have been side lined. It immediately comes to my mind the Einstein-Cartan theory of gravity, which is capable of producing regular black holes and cosmological solutions, while fully agreeing with GR otherwise. However, I am also not convinced these alternatives have a globally well-posed Cauchy problem. They tend to be less singular, yes, but singularities are still present.
+The pessimistic branch generally have good points. Alternatives to GR, sometimes for historical rather than scientific reasons, have been side lined. It immediately comes to my mind the Einstein-Cartan theory of gravity, which is capable of producing regular black holes and cosmological solutions, while fully agreeing with GR otherwise. However, I am also not convinced these alternatives have a globally well-posed Cauchy problem. They tend to be less singular, yes, but singularities are still occur.
 
 Ironically, it seems that the resolution of all these problems might lie in our future Cauchy development.
