@@ -121,9 +121,9 @@ This is a set of 10 quasi-linear 1st order PDEs, which give how the intrinsic lo
 
 On the other hand, the dynamical evolution for $K_{ij}$ is given by the projection of Einstein's equations, $R_{ij} = 0$, onto the leaves. Explicitly,
 
-$$ \partial_{\lambda} K_{ij} = \alpha \left[ R_{ij} \left(h\right) + K_{ij} K - 2 K_{ik} K_j^k \right] \;.  $$ 
+$$ \partial_{\lambda} K_{ij} = \alpha \left[ R_{ij}^h + K_{ij} K - 2 K_{ik} K_j^k \right] \;,  $$ 
 
-This is another set of 10 quasi-linear 1st order PDEs, which give how the local curvature, due to how the leaves "sit inside $X$", changes within the infinitesimal time interval that separates $\Sigma_{\lambda}$ and $\Sigma_{\lambda + d\lambda}$.
+where $R_{ij}^h$ is the Ricci tensor of $h_{ij}$. This is another set of 10 quasi-linear 1st order PDEs, which give how the local curvature, due to how the leaves "sit inside $X$", changes within the infinitesimal time interval that separates $\Sigma_{\lambda}$ and $\Sigma_{\lambda + d\lambda}$.
 
 Now, it is supposed to be clear that we can exchange Einstein's equations in the harmonic gauge, used by Yvonne and given by 10 2nd order PDEs, with the 20 1st order PDEs in the ADM formulation. Surely, we now have double the equations to solve, but they are also way simpler. This is in full analogy with the passage from the Lagrangian to the Hamiltonian formulation of Classical Mechanics. Particularly how $n$ Euler-Lagrange equations becomes $2n$ Hamilton's equations. In fact, one way to interpret the ADM formalism is as a Hamiltonian description of GR.
 
