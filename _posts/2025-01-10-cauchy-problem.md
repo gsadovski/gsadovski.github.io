@@ -4,7 +4,9 @@ title: How predictive is General Relativity?
 description: An account of the Cauchy problem for Einstein's equations.
 author: Guilherme Sadovski
 date: 2025-02-05 20:37 -0300 UTC
-tags: gr-qc, phys-math
+tags:
+ - gr-qc
+ - math-phys
 categories: physics
 pseudocode: false
 giscus_comments: false
