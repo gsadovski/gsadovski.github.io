@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "post-how-predictive-is-general-relativity",
+        },{id: "post-gravitational-waves",
+      
+        title: "Gravitational waves",
+      
+      description: "Milestone of the 21st century physics.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/gwaves/";
+        
+      },
+    },{id: "post-how-predictive-is-general-relativity",
       
         title: "How predictive is General Relativity?",
       
