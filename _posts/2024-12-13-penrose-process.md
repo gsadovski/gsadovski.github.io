@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Can black holes work as windmills?
-description: The Penrose process in Kerr black holes
+description: The Penrose process in Kerr black holes.
 author: Guilherme Sadovski
 date: 2024-12-13 11:17 -0300 UTC
 tags: gr-qc
 categories: physics
-pseudocode: false
 giscus_comments: false
 related_posts: true
 toc:
