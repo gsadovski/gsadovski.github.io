@@ -26,7 +26,7 @@ announcements:
 latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: 5 # leave blank to include all the blog posts
 ---
 
 I am a theoretical physicist with a passion for high-energy physics and gravity in extreme regimes. My research delves into the most fundamental aspects of the universe, with particular interest in [topological quantum field theories][wiki/tqft], [gravity][wiki/gravity], and global aspects of the [spacetime manifold][wiki/spacetime_topology].
