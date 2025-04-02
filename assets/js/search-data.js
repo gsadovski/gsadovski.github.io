@@ -63,7 +63,7 @@ ninja.data = [{
       
         title: "Symmetries and charges",
       
-      description: "The work of the most influencial woman in the history of mathematics",
+      description: "The work of the most influencial woman in the history of mathematics.",
       section: "Posts",
       handler: () => {
         
@@ -74,14 +74,19 @@ ninja.data = [{
       
         title: "Can black holes work as windmills?",
       
-      description: "The Penrose process in Kerr black holes",
+      description: "The Penrose process in Kerr black holes.",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2024/penrose-process/";
         
       },
-    },{id: "news-we-re-online",
+    },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-we-re-online",
           title: 'We’re online!',
           description: "",
           section: "News",},{

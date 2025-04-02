@@ -1,1 +1,1 @@
-window.MathJax={tex:{tags:"ams",autoload:{centernot:["centernot"]},inlineMath:[["$","$"]],macros:{tr:"{\\mathrm{tr}}",slashed:["{\\centernot#1}",1]}}};
+window.MathJax={tex:{tags:"ams",autoload:{centernot:["centernot"]},inlineMath:[["$","$"],["\\(","\\)"]],macros:{tr:"{\\mathrm{tr}}",slashed:["{\\centernot#1}",1]}},options:{renderActions:{addCss:[200,function(){const n=document.createElement("style");n.innerHTML="\n          .mjx-container {\n            color: inherit;\n          }\n        ",document.head.appendChild(n)},""]}}};
