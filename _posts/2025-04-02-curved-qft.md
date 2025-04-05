@@ -13,53 +13,30 @@ giscus_comments: false
 related_posts: true
 toc:
   sidebar: left
-tikzjax: true
 thumbnail: assets/img/curved-qft.webp
 ---
 
 ## Introduction
 
-This is the Introduction
+Quantum field theory (QFT) on curved spacetimes extends the principles of the usual QFT --- traditionally defined on a background with trivial geometry, such as the Euclidean or Minkowskian spacetime --- to more general backgrounds, with non-trivial geometries such as Riemannian or Lorentzian ones.
+
+The introduction of spacetime curvature, in general, reduces the number of Killing vectors that would otherwise be accepted by a homogeneous space. This, of course, greatly impacts its global algebra of isometries. In particular, when this algebra is no longer isomorphic to Poincaré's, a series of physical and mathematical difficulties arise. Most of these can essentially be traced to changes in the spectral decomposition of differential operators on this new curved space ---  with emphasis on those operators whose kernels define the dynamics of our relevant quantum fields. In simpler terms, the presence of curvature changes the allowed solutions to our differential equations, which brings about new physical effects.
+
+There are many (infinite) ways in which the curvature can affect quantum fields. A simplifying assumption often used is the so-called *principle of minimal coupling*. Theories which are minimally coupled to spacetime only interacts with curvature indirectly, via a mathematical object known as a *covariant derivative* or *connection*. Since our analysis will be restricted to scalar quantum fields, this 
+
 
 ## Massive Klein-Gordon field 
 
-This is an inline equation $x^{2} + y^{2} = r^{2}$. And, these are displayed equations:
-
-$$ x = r^{2} \cos^{2} \theta \;, $$
-$$ y = r^{2} \sin^{2} \theta \;. $$
-
 ## Minimal coupling
 
-## 
-a
-This is a center aligned TiKZ picture:
+## Spectral decomposition of the quantized Klein-Gordon field
 
-<div align="center">
-<script type="text/tikz">
-\begin{tikzpicture}
-    % Outer ergosurface
-    \fill[gray!70] (0,0) ellipse (4 and 2);
-    \node[gray] at (4.3,0) {$r_{E}^+$};
-    % Outer event horizon
-    \fill[black] (0,0) ellipse (2.7 and 2);
-    \node at (3,0) {$r_{H}^+$};
-    % Inner event Horizon
-    \draw[dashed, gray] (0,0) ellipse ( 2 and 1.2) ;
-    \node[gray!70] at (2.3,0) {$r_{H}^-$};
-    % Inner ergosurface
-    \draw[dashed, gray] (0,0) ellipse ( 1.3 and 1.2) ;
-    \node[gray!70] at (1.6,0) {$r_{E}^-$};
-    % Ring Singularity
-    \draw[thick, red] (0,0) ellipse ( 1.3 and 0.3) ;
-    % Parameters
-    \node[gray!70] at (0,.7) {$M$, $J$};
-\end{tikzpicture}
-</script>
-<div class="caption">
-  Figure 1: Schematics of the Kerr black hole
-</div>
-</div>
+## The Fulling-Davies-Unruh effect
+
+## Why a thermal spectrum?
+
+## The Bekenstein-Hawking radiation
+
+## The Giddins-Hawking radiation
 
 ## Conclusions
-
-This is your conclusions.
