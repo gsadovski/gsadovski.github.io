@@ -89,8 +89,8 @@ ninja.data = [{
             },},{id: "news-we-re-online",
           title: 'We’re online!',
           description: "",
-          section: "News",},{id: "news-its-official-approved-for-an-adjunct-professorship-position-at-universidade-de-brasília-brazil",
-          title: 'Its official: approved for an adjunct professorship position at Universidade de Brasília, Brazil....',
+          section: "News",},{id: "news-approved-for-an-adjunct-professorship-position-at-universidade-de-brasília-brazil",
+          title: 'Approved for an adjunct professorship position at Universidade de Brasília, Brazil.',
           description: "",
           section: "News",},{
         id: 'social-email',
