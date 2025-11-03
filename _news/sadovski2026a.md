@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New paper is out about BRST instability in topological gauge field theories ([arXiv:2510.22323](https://arxiv.org/abs/2510.22323))
+New paper is out! [arXiv:2510.22323](https://arxiv.org/abs/2510.22323)
