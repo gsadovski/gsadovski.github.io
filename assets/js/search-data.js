@@ -38,50 +38,50 @@ ninja.data = [{
             window.location.href = "/repositories/";
           },
         },{id: "post-gravitational-waves",
-      
-        title: "Gravitational waves",
-      
-      description: "Milestone of the 21st century physics.",
-      section: "Posts",
-      handler: () => {
         
-          window.location.href = "/blog/2025/gwaves/";
+          title: "Gravitational waves",
         
-      },
-    },{id: "post-how-predictive-is-general-relativity",
-      
-        title: "How predictive is General Relativity?",
-      
-      description: "An account of the Cauchy problem for Einstein&#39;s equations.",
-      section: "Posts",
-      handler: () => {
+        description: "Milestone of the 21st century physics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/gwaves/";
+          
+        },
+      },{id: "post-how-predictive-is-general-relativity",
         
-          window.location.href = "/blog/2025/cauchy-problem/";
+          title: "How predictive is General Relativity?",
         
-      },
-    },{id: "post-symmetries-and-charges",
-      
-        title: "Symmetries and charges",
-      
-      description: "The work of the most influencial woman in the history of mathematics.",
-      section: "Posts",
-      handler: () => {
+        description: "An account of the Cauchy problem for Einstein&#39;s equations.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/cauchy-problem/";
+          
+        },
+      },{id: "post-symmetries-and-charges",
         
-          window.location.href = "/blog/2025/noether/";
+          title: "Symmetries and charges",
         
-      },
-    },{id: "post-can-black-holes-work-as-windmills",
-      
-        title: "Can black holes work as windmills?",
-      
-      description: "The Penrose process in Kerr black holes.",
-      section: "Posts",
-      handler: () => {
+        description: "The work of the most influencial woman in the history of mathematics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/noether/";
+          
+        },
+      },{id: "post-can-black-holes-work-as-windmills",
         
-          window.location.href = "/blog/2024/penrose-process/";
+          title: "Can black holes work as windmills?",
         
-      },
-    },{id: "books-the-godfather",
+        description: "The Penrose process in Kerr black holes.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/penrose-process/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
