@@ -98,8 +98,8 @@ ninja.data = [{
           section: "News",},{id: "news-the-2025-nobel-prize-in-physics-went-to-macroscopic-quantum-tunnelling",
           title: 'The 2025 Nobel Prize in Physics went to macroscopic quantum tunnelling!',
           description: "",
-          section: "News",},{id: "news-new-paper-is-out-about-brst-instability-in-topological-gauge-field-theories-arxiv-2510-22323",
-          title: 'New paper is out about BRST instability in topological gauge field theories (arXiv:2510.22323)...',
+          section: "News",},{id: "news-new-paper-is-out-arxiv-2510-22323",
+          title: 'New paper is out (arXiv:2510.22323)!',
           description: "",
           section: "News",},{
         id: 'social-email',
